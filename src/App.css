@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(bg-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-color: #004064;
+  height: 923px;
+}
+.login-form {
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #9BF6FF;
+  padding:40px;
+  margin: 100px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 40px 15px rgba(0.9, 0.9, 0.9, 0.9);
+}
+.input-email {
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.input-pass {
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn-login {
+  height: 55px;
+  width: 310px;
+  border-radius: 15px;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #004064;
+  color: aliceblue;
+}
+.server-result h2{
+  color: black;
+}
+.hp-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #004064; */
+  background-image: url(hpbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  min-height: 100vh;
+  margin: 0 auto;
+}
+div.dash-menu {
+  width: 1867px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  background-image: url(dashbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+.logout {
+  font-size: 1.5em;
+  width: 150px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 1500px;
+  text-align: center;
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
+}
+.li-user {
+  font-size: 1.2em;
+  padding-top: 50px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h2 {
+  color: black;
+  text-align: center;
+}
+.fetch-h2 {
+  color: white;
+  font-size: 1.9em;
+  text-align: center;
+}
+th, tr, td {
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-token {
+  color: white;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.fetch-table {
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 10px 10px 20px 10px rgba(0.4, 0.4, 0.4, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+.view-table {
+  padding: 20px;
+  list-style: none;
+  width: 400px;
+  text-align: justify;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow:  rgba(0.4, 0.4, 0.4, 0.4);
+}
+.btn-back {
+  font-size: 1.5em;
+  width: 200px;
+  height: 50px;
+  background-color: #004064;
+  border-radius: 10px;
+  color: white;
 }
